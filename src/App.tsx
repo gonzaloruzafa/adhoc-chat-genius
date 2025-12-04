@@ -71,8 +71,19 @@ function App() {
   return (
     <div className="app">
       <header className="header">
-        <h1>🤖 Smart Agent</h1>
-        <p>Tu asistente conversacional inteligente</p>
+        <div className="header-content">
+          <div className="logo-section">
+            <span className="logo">🤖</span>
+            <div>
+              <h1>Chat Genius</h1>
+              <p className="subtitle">Tu asistente conversacional inteligente</p>
+            </div>
+          </div>
+          <div className="adhoc-branding">
+            <span className="powered-by">Powered by</span>
+            <span className="adhoc-logo">Adhoc</span>
+          </div>
+        </div>
       </header>
 
       <div className="chat-container">
@@ -122,6 +133,10 @@ function App() {
           </button>
         </form>
       </div>
+
+      <footer className="footer">
+        <p>© 2024 Adhoc. Todos los derechos reservados.</p>
+      </footer>
     </div>
   );
 }
